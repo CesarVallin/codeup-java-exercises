@@ -3,6 +3,17 @@ public class TreeStory {
     public static void main (String[] args) {
         Scanner scanner = new Scanner(System.in);
 
+        // Input age...
+        System.out.print("What is your age?  ");
+        String ageAsString = scanner.nextLine();
+        // Parse integer... input String to int
+        int age = Integer.parseInt(ageAsString);
+        int ageLimit = 18;
+        if (age < ageLimit) {
+            System.out.printf("You must be %s or older to run this program", ageLimit);
+            System.exit(0);
+        }
+
         // Input name...
         System.out.print("What is your name?  ");
         String name = scanner.nextLine();
