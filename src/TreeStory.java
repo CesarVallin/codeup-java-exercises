@@ -24,7 +24,8 @@ public class TreeStory {
         // Input noun...
         System.out.print("Enter a noun:  ");
         String noun = scanner.nextLine();
-        if (noun.equals("dork")) { // remember, because it is a String class, the noun variable has methods!!!!
+        if (noun.equalsIgnoreCase("dork")
+            || noun.equalsIgnoreCase("jerk")) { // remember, because it is a String class, the noun variable has methods!!!!
             System.out.print("That language is not allowed potty mouth! Exiting program \n\n");
             System.exit(0);
         }
