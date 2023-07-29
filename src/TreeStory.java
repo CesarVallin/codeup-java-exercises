@@ -7,7 +7,7 @@ public class TreeStory {
         System.out.print("What is your age?  ");
         String ageAsString = scanner.nextLine();
         // Parse integer... input String to int
-        int age = Integer.parseInt(ageAsString);
+        int age = Integer.parseInt(ageAsString); // Integer's class static method parseInt, to generate a primitive int
         int ageLimit = 18;
         if (age < ageLimit) {
             System.out.printf("You must be %s or older to run this program", ageLimit);
@@ -24,6 +24,10 @@ public class TreeStory {
         // Input noun...
         System.out.print("Enter a noun:  ");
         String noun = scanner.nextLine();
+        if (noun.equals("dork")) { // remember, because it is a String class, the noun variable has methods!!!!
+            System.out.print("That language is not allowed potty mouth! Exiting program \n\n");
+            System.exit(0);
+        }
         // Input adverb...
         System.out.print("Enter an adverb:  ");
         String adverb = scanner.nextLine();
