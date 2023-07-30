@@ -1,15 +1,55 @@
 public class HelloWorld {
     public static void main(String[] args) {
-        System.out.println("Hello World!");
-        System.out.print("this is the second print");
+        System.out.printf("Hello World!%n%n");
+        System.out.printf("this is the second print %n%n");
 
-        char myCharacter = 'c';
-        System.out.println("Java is \"fun\"");
+        int myFavoriteNumber = 7;
+        System.out.printf(myFavoriteNumber + "%n%n");
 
-        // variables...
-        int favNum = 7;
-        boolean whateverz = true;
-        String someString = "hello there";
+        String myString = "C";
+        System.out.printf(myString + "%n%n");
+
+//        // You have floating point numbers, cannot use long!
+//        long anotherNumber = 3.14;
+//        System.out.println(anotherNumber);
+
+        // Float vs double...
+        double myNumber = 3.14;
+        System.out.println(myNumber);
+
+//        // Post-incremental
+//        int x = 5;
+//        System.out.println(x++);
+//        System.out.println(x);
+        // Pre-incremental
+        int x = 5;
+        System.out.println(++x);
+        System.out.println(x);
+
+        // YOU cannot cast two distinct values!!! "three" cannot be converted to 3.
+        // "3" could be converted to 3.
+        // Implicit and Explicit casting can be done within same data types.
+//        String theNumberThree = "three";
+//        Object o = theNumberThree;
+//        int three = (int) o;
+
+        // Shorthand operators
+        int xShortHand = 4;
+        xShortHand += 5;
+        System.out.println(xShortHand);
+
+        int xA = 300000000;
+        int yA = 400000000;
+        yA *= xA;
+        System.out.println(yA);
+
+        int xB = 10;
+        int yB = 2;
+        xB /= yB;
+        yB -= xB;
+        System.out.println(xB);
+        System.out.println(yB);
+
 
     }
 }
