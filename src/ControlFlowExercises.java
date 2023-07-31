@@ -37,6 +37,29 @@ public class ControlFlowExercises {
 //        } while (i < 1000000);
         // ----------------------------------------------------------------------------------------
         // For loops:
+//        for (int i = 5; i <= 15; i++) {
+//            System.out.println(i);
+//        }
+//        // By 2s
+//        for (int i = 0; i <= 100; i++) {
+//            if (i % 2 == 0) {
+//                System.out.println(i);
+//            }
+//        }
+//        // By 5s
+//        for (int i = 100; i >= 5; i--) {
+//            if (i % 5 == 0) {
+//                System.out.println(i);
+//            }
+//        }
+        // Squared
+//        for (long i = 2L; i < 1000000; i *= i) {
+//            System.out.println(i);
+//        }
+        // ----------------------------------------------------------------------------------------
+        // FizzBuzz
+
+
 
 
 

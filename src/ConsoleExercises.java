@@ -27,6 +27,7 @@ public class ConsoleExercises {
         // Calculator...
         scanner.nextLine();
         System.out.print("Please enter the length of your classroom:  ");
+//        double length = scanner.nextDouble();
         String roomLength = scanner.nextLine();
         double length = Double.parseDouble(roomLength);
         System.out.print("Please enter the width of your classroom:  ");
