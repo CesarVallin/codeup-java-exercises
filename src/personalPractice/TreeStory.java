@@ -1,3 +1,5 @@
+package personalPractice;
+
 import java.util.Scanner;
 public class TreeStory {
     public static void main (String[] args) {
