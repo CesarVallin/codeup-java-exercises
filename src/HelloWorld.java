@@ -17,6 +17,14 @@ public class HelloWorld {
         double myNumber = 3.14;
         System.out.println(myNumber);
 
+        // Better way
+        float myNumberB = 3.14f;
+        System.out.println(myNumberB);
+
+        // Sloppy way...
+        float myNumberA = (float) 3.14;
+        System.out.println(myNumberA);
+
 //        // Post-incremental
 //        int x = 5;
 //        System.out.println(x++);
@@ -42,6 +50,11 @@ public class HelloWorld {
         int yA = 400000000;
         yA *= xA;
         System.out.println(yA);
+
+        long xAA = 300000000L;
+        long yAA = 400000000L;
+        yAA *= xAA;
+        System.out.println(yAA);
 
         int xB = 10;
         int yB = 2;
