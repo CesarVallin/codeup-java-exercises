@@ -63,6 +63,9 @@ public class HelloWorld {
         System.out.println(xB);
         System.out.println(yB);
 
+        System.out.println(Integer.MAX_VALUE);
+        System.out.println(Long.MAX_VALUE);
+
 
     }
 }
