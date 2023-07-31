@@ -57,7 +57,43 @@ public class ControlFlowExercises {
 //            System.out.println(i);
 //        }
         // ----------------------------------------------------------------------------------------
-        // FizzBuzz
+//        // FizzBuzz
+//        for (int i = 1; i <= 100; i++) {
+//            if (i % 3 == 0 && i % 5 == 0) {
+//                System.out.println("FizzBuzz");
+//            } else if(i % 3 == 0) {
+//                System.out.println("Fizz");
+//            } else if (i % 5 == 0) {
+//                System.out.println("Buzz");
+//            } else {
+//                System.out.println(i);
+//            }
+//
+//        }
+        // ----------------------------------------------------------------------------------------
+        // Table of powers...
+        System.out.print("Would you like to enter an integer? [y/N]  ");
+        String userResponse = scanner.nextLine();
+        boolean responseYes = userResponse.equalsIgnoreCase("y");
+        if(responseYes) {
+            System.out.println("Enter an integer:  ");
+            int userInteger = scanner.nextInt();
+            for (int i = 1; i <= userInteger; i++) {
+                if (i == 1) {
+                    System.out.println("number | squared | cubed");
+                    System.out.println("------ | ------- | -----");
+                    System.out.format( "%-7d| %-8d| %-5d", i, i, i);
+                }
+                if (i > 1) {
+                    System.out.format("%n%-7d| %-8d| %-5d", i, (i * i), (i * i * i));
+                }
+            }
+        } else {
+            System.out.println("Maybe next time!");
+            System.exit(0);
+        }
+
+
 
 
 
