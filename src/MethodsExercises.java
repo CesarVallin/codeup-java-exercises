@@ -28,6 +28,9 @@ public class MethodsExercises {
 
     public static void main (String[] args) {
 
+
+
+
         System.out.println(multiply(3, 4));
         System.out.println(multiplicationbyLoop(3, 4));
 
