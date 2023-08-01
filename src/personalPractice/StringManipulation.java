@@ -58,7 +58,36 @@ public class StringManipulation {
         System.out.println(choice);
         // This example shows how to use the trim() method to remove any spaces from the beginning and end fo a String object.  As a result, after this code executes, the string variable named choice refers to a string literal of "y".
 
-        // substring() method
+        // substring() method...
+        String nameM = "Mike Murach";
+        int indexM = nameM.indexOf(" ");
+        String firstName = nameM.substring(0, indexM);
+        System.out.println(firstName);
+        String lastName = nameM.substring(indexM + 1);
+        System.out.println(lastName);
+        // This example shows how to use the substring() method to parse the first name and last name from a string for a full name.
+
+        // code that adds dashes to a credit card number...
+        String ccNumber = "4012888888881881";
+        String part1 = ccNumber.substring(0, 4);
+        String part2 = ccNumber.substring(4, 8);
+        String part3 = ccNumber.substring(8, 12);
+        String part4 = ccNumber.substring(12, 16);
+        ccNumber = part1 + "-" + part2 + "-" + part3 + "-" + part4;
+        System.out.println(ccNumber);
+        // Shows how to add dashes using the substring() method
+
+        // replace() method...
+        String phoneNumber = "977-555-1212";
+        phoneNumber = phoneNumber.replace("-", ".");
+        System.out.println(phoneNumber);
+        // Shows how to replace a character in a String with its replacement.
+
+        String creditcNumber = "4012-8888-8888-1881";
+        creditcNumber = creditcNumber.replace("-", "");
+        System.out.println(creditcNumber);
+        // Same concept, however now you are practically removing the character, since its replacement is an empty string
+
 
 
 
