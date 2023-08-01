@@ -93,40 +93,40 @@ public class ControlFlowExercises {
                     noContinue = false;
                 }
             } while(noContinue);
-        // ----------------------------------------------------------------------------------------
-        // Number Grade into letters...
-
-        boolean repeat = true;
-        do {
-            System.out.print("Enter your numerical grade:  ");
-            int grade = scanner.nextInt();
-
-            String responseGrade;
-            if (grade >= 99 && grade <= 100) {
-                responseGrade = "A+";
-                System.out.format("%d = %s", grade, responseGrade);
-            } else if (grade >= 88 && grade < 99) {
-                responseGrade = "A";
-                System.out.format("%d = %s", grade, responseGrade);
-            } else if (grade >= 80 && grade < 88) {
-                responseGrade = "B";
-                System.out.format("%d = %s", grade, responseGrade);
-            } else if (grade >= 67 && grade < 80) {
-                responseGrade = "C";
-                System.out.format("%d = %s", grade, responseGrade);
-            } else if (grade >= 60 && grade < 67) {
-                responseGrade = "D";
-                System.out.format("%d = %s", grade, responseGrade);
-            } else if (grade > 0 && grade < 60) {
-                responseGrade = "F";
-                System.out.format("%d = %s", grade, responseGrade);
-            }
-            System.out.format("%nWould you like to Continue? [y/N]?  ");
-            String userResponse = scanner.next();
-            if(userResponse.equalsIgnoreCase("y")) {
-                repeat = false;
-            }
-        } while (repeat);
+//        // ----------------------------------------------------------------------------------------
+//        // Number Grade into letters...
+//
+//        boolean repeat = true;
+//        do {
+//            System.out.print("Enter your numerical grade:  ");
+//            int grade = scanner.nextInt();
+//
+//            String responseGrade;
+//            if (grade >= 99 && grade <= 100) {
+//                responseGrade = "A+";
+//                System.out.format("%d = %s", grade, responseGrade);
+//            } else if (grade >= 88 && grade < 99) {
+//                responseGrade = "A";
+//                System.out.format("%d = %s", grade, responseGrade);
+//            } else if (grade >= 80 && grade < 88) {
+//                responseGrade = "B";
+//                System.out.format("%d = %s", grade, responseGrade);
+//            } else if (grade >= 67 && grade < 80) {
+//                responseGrade = "C";
+//                System.out.format("%d = %s", grade, responseGrade);
+//            } else if (grade >= 60 && grade < 67) {
+//                responseGrade = "D";
+//                System.out.format("%d = %s", grade, responseGrade);
+//            } else if (grade > 0 && grade < 60) {
+//                responseGrade = "F";
+//                System.out.format("%d = %s", grade, responseGrade);
+//            }
+//            System.out.format("%nWould you like to Continue? [y/N]?  ");
+//            String userResponse = scanner.next();
+//            if(userResponse.equalsIgnoreCase("y")) {
+//                repeat = false;
+//            }
+//        } while (repeat);
 
 
 
