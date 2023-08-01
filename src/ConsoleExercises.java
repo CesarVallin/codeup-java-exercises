@@ -5,21 +5,21 @@ public class ConsoleExercises {
         Scanner scanner = new Scanner(System.in);
 
 //        double pi = 3.14159;
-//        System.out.format("The value of pi is approximately %s %n%n", pi);
+//        System.out.format("The value of pi is approximately %.2f%n", pi);
 //
-//        // nextInt() & nextLong()
+        // nextInt() & nextLong()
 //        System.out.print("Please enter an integer:  ");
 //        long userNumber = scanner.nextLong();
-//        System.out.format("The number you entered is %s %n%n", userNumber);
+//        System.out.format("The number you entered is %d%n", userNumber);
 //
-//        System.out.print("Please enter 3 words:  ");
+//        System.out.println("Please enter 3 words, separated by spaces  ");
 //        String firstWord = scanner.next();
 //        String secondWord = scanner.next();
 //        String thirdWord = scanner.next();
-//        System.out.format("You entered: %s, %s, and %s %n%n", firstWord, secondWord, thirdWord);
+//        System.out.format("You entered: %s, %s, and %s %n", firstWord, secondWord, thirdWord);
 //
 //        // The first scanner.nextLine() refreshes in a way the program.
-//        scanner.nextLine();
+////        scanner.nextLine();
 //        System.out.print("Please enter a sentence  ");
 //        String userSentence = scanner.nextLine();
 //        System.out.format("The sentence you entered is:  %s", userSentence);
