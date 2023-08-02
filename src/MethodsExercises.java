@@ -25,6 +25,13 @@ public class MethodsExercises {
         }
         return result;
     }
+
+    public static int recursionMultiply (int base, int exponent) {
+        if (base == 0 || exponent == 0) {
+            return 0;
+        }
+        return base + recursionMultiply(base, exponent -1);
+    }
     // -------------------------------------------------------------------------------------------
     // 2. Method validates input
     public static int getInteger(int min, int max) {
@@ -40,36 +47,50 @@ public class MethodsExercises {
     // -------------------------------------------------------------------------------------------
     // 3. Factorial
     public static long factorial(long numb) {
-        Scanner sc2 = new Scanner(System.in);
         long counter = 1L;
         for (long i = 1; i <= numb; i++) {
             counter *= i;
             System.out.println(i + "!" + " = " + counter);
         }
-        System.out.println("Would you like to do another factorial? [y/N]");
-        String goAgain = sc2.nextLine();
-        if (goAgain.equalsIgnoreCase("y")) {
-            int userInput = getInteger(1, 10);
-            long factorialVar = factorial(userInput);
-        }
         return counter;
+    }
+    public static long recursionFactorial(long numb) {
+        System.out.println(numb);
+        if (numb == 1) { // Called Base Case
+            return numb;
+        }
+        return numb * recursionFactorial(numb - 1);
     }
 
     public static void main (String[] args) {
+        Scanner scanner = new Scanner(System.in);
         // -------------------------------------------------------------------------------------------
         // 1. Basic arithmetic
 //        System.out.println(multiply(3, 4));
 //        System.out.println(multiplicationByLoop(3, 4));
+//        System.out.println(recursionMultiply(4, 3));
 //        System.out.println(divide(10, 5));
 //        System.out.println(add(2, 2));
 //        System.out.println(subtract(4, 3));
 //        System.out.println(modulus(4, 2));
         // -------------------------------------------------------------------------------------------
-        // 2. Method validates input
-        int userInput = getInteger(1, 10);
-        // -------------------------------------------------------------------------------------------
-        // 3. Factorial
-        long factorialVar = factorial(userInput);
+
+        System.out.println(recursionFactorial(4));
+        // 2 & 3
+//        String goAgain;
+//        do {
+//            // 2. Method validates input
+//            int userInput = getInteger(1, 10);
+//            // -------------------------------------------------------------------------------------------
+//            // 3. Factorial
+//            long factorialVar = factorial(userInput);
+//            System.out.println(factorialVar);
+//
+//            System.out.println("Would you like another factorial? [y/N]");
+//            goAgain = scanner.nextLine();
+//        } while(goAgain.equalsIgnoreCase("y"));
+
+
 
 
     }
