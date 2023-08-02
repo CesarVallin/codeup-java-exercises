@@ -45,16 +45,6 @@ public class MethodsExercises {
         return userInput;
     }
 
-    public static void rollDice() {
-        int userDiceRoll = 6;
-        double diceRollA = Math.floor(Math.random() * userDiceRoll) + 1; // It is still a double, just rounded down.  You could either cast it here, start diceRollA as an int , then cast it right of the declaration assignment, or cast it as below...
-        double diceRollB = Math.floor(Math.random() * userDiceRoll) + 1;
-        int output1 = (int) diceRollA;
-        int output2 = (int) diceRollB;
-        String completeRoll = output1 + " " + output2;
-        System.out.println(completeRoll);
-        System.out.println(output1 + " " + output2);
-    }
     // -------------------------------------------------------------------------------------------
     // 3. Factorial
     public static long factorial(long numb) {
@@ -71,6 +61,35 @@ public class MethodsExercises {
             return numb;
         }
         return numb * recursionFactorial(numb - 1);
+    }
+    // -------------------------------------------------------------------------------------------
+    // 4. dice roll game
+    public static String rollDice(int userDiceRoll) {
+        double diceRollA = Math.floor(Math.random() * userDiceRoll) + 1; // It is still a double, just rounded down.  You could either cast it here, start diceRollA as an int , then cast it right of the declaration assignment, or cast it as below...
+        double diceRollB = Math.floor(Math.random() * userDiceRoll) + 1;
+        int output1 = (int) diceRollA;
+        int output2 = (int) diceRollB;
+        String completeRoll = output1 + " " + output2;
+        System.out.println(completeRoll);
+        return completeRoll;
+    }
+
+    public static void askUserToRoll() {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter the number of sides for a pair of dice:  ");
+        int userResponse = scan.nextInt();
+        String rollResonse;
+        do {
+            System.out.println("Roll the dice? [y/N]");
+            rollResonse = scan.next();
+            System.out.println(rollResonse);
+            if (rollResonse.equalsIgnoreCase("y")) {
+                System.out.println(rollDice(userResponse));
+            } else {
+                break;
+            }
+        } while(true);
+
     }
 
     public static void main (String[] args) {
@@ -102,7 +121,11 @@ public class MethodsExercises {
 //            goAgain = scanner.nextLine();
 //        } while(goAgain.equalsIgnoreCase("y"));
 
-        rollDice();
+
+
+        askUserToRoll();
+
+
 
 
 
