@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.lang.Math;
 
 public class MethodsExercises {
     // -------------------------------------------------------------------------------------------
@@ -44,6 +45,18 @@ public class MethodsExercises {
         System.out.println("You entered " + userInput);
         return userInput;
     }
+
+    public static void rollDice() {
+        Scanner sc2 = new Scanner(System.in);
+        System.out.println("Please enter the number of sides for a pair of dice: ");
+        int userDiceRoll = sc2.nextInt();
+//        int userDiceRoll = 6;
+        double diceRollA = Math.floor(Math.random() * userDiceRoll) + 1; // It is still a double, just rounded down.  You could either cast it here, start diceRollA as an int , then cast it right of the declaration assignment, or cast it as below...
+        double diceRollB = Math.floor(Math.random() * userDiceRoll) + 1;
+        int output1 = (int) diceRollA;
+        int output2 = (int) diceRollB;
+        System.out.println(output1 + " " + output2);
+    }
     // -------------------------------------------------------------------------------------------
     // 3. Factorial
     public static long factorial(long numb) {
@@ -75,7 +88,8 @@ public class MethodsExercises {
 //        System.out.println(modulus(4, 2));
         // -------------------------------------------------------------------------------------------
 
-        System.out.println(recursionFactorial(4));
+//        long recursionFactorialVar = recursionFactorial(4);
+//        System.out.println(recursionFactorialVar);
         // 2 & 3
 //        String goAgain;
 //        do {
@@ -89,6 +103,10 @@ public class MethodsExercises {
 //            System.out.println("Would you like another factorial? [y/N]");
 //            goAgain = scanner.nextLine();
 //        } while(goAgain.equalsIgnoreCase("y"));
+
+        rollDice();
+
+
 
 
 
