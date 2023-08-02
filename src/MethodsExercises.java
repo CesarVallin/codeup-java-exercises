@@ -40,15 +40,20 @@ public class MethodsExercises {
     // -------------------------------------------------------------------------------------------
     // 3. Factorial
     public static long factorial(long numb) {
+        Scanner sc2 = new Scanner(System.in);
         long counter = 1L;
         for (long i = 1; i <= numb; i++) {
             counter *= i;
             System.out.println(i + "!" + " = " + counter);
         }
+        System.out.println("Would you like to do another factorial? [y/N]");
+        String goAgain = sc2.nextLine();
+        if (goAgain.equalsIgnoreCase("y")) {
+            int userInput = getInteger(1, 10);
+            long factorialVar = factorial(userInput);
+        }
         return counter;
     }
-
-
 
     public static void main (String[] args) {
         // -------------------------------------------------------------------------------------------
