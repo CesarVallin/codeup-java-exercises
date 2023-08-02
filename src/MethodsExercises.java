@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.lang.Math;
 
 public class MethodsExercises {
     // -------------------------------------------------------------------------------------------
@@ -52,7 +51,7 @@ public class MethodsExercises {
         double diceRollB = Math.floor(Math.random() * userDiceRoll) + 1;
         int output1 = (int) diceRollA;
         int output2 = (int) diceRollB;
-        String completeRoll = Integer.toString(output1) + " " + Integer.toString(output2);
+        String completeRoll = output1 + " " + output2;
         System.out.println(completeRoll);
         System.out.println(output1 + " " + output2);
     }
