@@ -39,9 +39,9 @@ public class MethodsExercises {
     }
     // -------------------------------------------------------------------------------------------
     // 3. Factorial
-    public static long factorial(int numb) {
+    public static long factorial(long numb) {
         long counter = 1L;
-        for (int i = 1; i <= numb; i++) {
+        for (long i = 1; i <= numb; i++) {
             counter *= i;
             System.out.println(i + "!" + " = " + counter);
         }
