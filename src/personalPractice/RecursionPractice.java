@@ -1,5 +1,5 @@
 package personalPractice;
-
+import java.util.Arrays;
 public class RecursionPractice {
     public static void count (int n) {
         if (n <= 0) {
@@ -19,9 +19,11 @@ public class RecursionPractice {
     }
 
 
+
     public static void main (String[] args) {
 //        count(5);
-        countTimes(2);
+//        countTimes(2);
+
 
     }
 }
