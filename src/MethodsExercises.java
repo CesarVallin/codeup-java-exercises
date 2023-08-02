@@ -38,7 +38,15 @@ public class MethodsExercises {
         return userInput;
     }
     // -------------------------------------------------------------------------------------------
-    //
+    // 3. Factorial
+    public static long factorial(int numb) {
+        long counter = 1L;
+        for (int i = 1; i <= numb; i++) {
+            counter *= i;
+            System.out.println(i + "!" + " = " + counter);
+        }
+        return counter;
+    }
 
 
 
@@ -56,7 +64,7 @@ public class MethodsExercises {
         int userInput = getInteger(1, 10);
         // -------------------------------------------------------------------------------------------
         // 3. Factorial
-
+        long factorialVar = factorial(userInput);
 
 
     }
