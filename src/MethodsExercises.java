@@ -73,7 +73,6 @@ public class MethodsExercises {
         System.out.println(completeRoll);
         return completeRoll;
     }
-
     public static void askUserToRoll() {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter the number of sides for a pair of dice:  ");
@@ -91,6 +90,8 @@ public class MethodsExercises {
         } while(true);
 
     }
+    // -------------------------------------------------------------------------------------------
+
 
     public static void main (String[] args) {
         Scanner scanner = new Scanner(System.in);
