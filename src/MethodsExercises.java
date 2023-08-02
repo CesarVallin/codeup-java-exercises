@@ -47,10 +47,7 @@ public class MethodsExercises {
     }
 
     public static void rollDice() {
-        Scanner sc2 = new Scanner(System.in);
-        System.out.println("Please enter the number of sides for a pair of dice: ");
-        int userDiceRoll = sc2.nextInt();
-//        int userDiceRoll = 6;
+        int userDiceRoll = 6;
         double diceRollA = Math.floor(Math.random() * userDiceRoll) + 1; // It is still a double, just rounded down.  You could either cast it here, start diceRollA as an int , then cast it right of the declaration assignment, or cast it as below...
         double diceRollB = Math.floor(Math.random() * userDiceRoll) + 1;
         int output1 = (int) diceRollA;
