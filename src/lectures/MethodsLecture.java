@@ -85,6 +85,33 @@ public class MethodsLecture {
     // TODO: Write a method, returnLongerString, that takes in two strings and returns the longer of the two strings.
     // TODO: Write a method, canBeHalved, that takes in an integer and returns true if the input integer is evenly divisible by two.
     // TODO: !! Complete math exercises from the curriculum !!
+    public static String returnName () {
+        return "Cesar";
+    }
+    public static String returnLongerString(String a, String b) {
+        if(a.length() > b.length()) {
+            return a;
+        }
+        return b;
+    }
+    public static boolean canBeHalved(int num) {
+        boolean even = num % 2 == 0;
+        boolean odd = num % 2 != 0;
+        if (even) {
+            return true;
+        }
+        return false;
+    }
+
+    public static void main(String[] args) {
+        String name = returnName();
+        System.out.println(name);
+        String longestOfTwo = returnLongerString("Codeup", "CodeupCodeup");
+        System.out.println(longestOfTwo);
+        boolean halved = canBeHalved(4);
+        System.out.println(halved);
+    }
+
 
 
     // ----------- OVERLOADING
