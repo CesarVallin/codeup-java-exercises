@@ -95,12 +95,13 @@ public class MethodsLecture {
         return b;
     }
     public static boolean canBeHalved(int num) {
-        boolean even = num % 2 == 0;
-        boolean odd = num % 2 != 0;
-        if (even) {
-            return true;
-        }
-        return false;
+//        boolean even = num % 2 == 0;
+//        boolean odd = num % 2 != 0;
+//        if (even) {
+//            return true;
+//        }
+//        return false;
+        return num % 2 == 0;
     }
 
     public static void main(String[] args) {

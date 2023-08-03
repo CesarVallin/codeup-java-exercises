@@ -30,7 +30,6 @@ public class HighLow {
 //        scan.close();
         return userNumber;
     }
-
     public static void playGame() {
         int randomNumber = random1To100();
         System.out.println(randomNumber + " random number main- before do while");
