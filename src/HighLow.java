@@ -6,7 +6,6 @@ public class HighLow {
     public static int random1To100() {
         double randomNumberStart = Math.floor(Math.random() * 100) + 1;
         int randomNumber = (int) randomNumberStart;
-        System.out.println(randomNumber);
         return randomNumber;
     }
     public static void highLow(int guessedNumber, int randomNumber) {
@@ -24,12 +23,10 @@ public class HighLow {
         do {
             System.out.println("Enter a number between 1 and 100");
             userNumber = scan.nextInt();
-            System.out.println(userNumber);
             if (userNumber < 1 || userNumber > 100) {
                 System.out.println("Not a valid number");
             }
         } while (userNumber < 1 || userNumber > 100);
-        System.out.println(userNumber);
         return userNumber;
     }
 
@@ -38,12 +35,19 @@ public class HighLow {
 
     public static void main(String[] args) {
         int randomNumber = random1To100();
-        System.out.println(randomNumber + "random number main");
+        System.out.println(randomNumber + " random number main- before do while");
         int validation;
+        int counter = 0;
         do {
             validation = welcomeToGame();
             highLow(validation, randomNumber);
-        } while(validation != randomNumber);
+            counter++;
+            System.out.println("Attempt:  " + counter);
+            if (counter == 4) {
+                System.out.println("Last try! make it count!!");
+            }
+        } while(validation != randomNumber && counter < 5);
+        System.out.println(randomNumber + " random number main- after do while");
 
     }
 }
