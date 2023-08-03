@@ -27,13 +27,11 @@ public class HighLow {
                 System.out.println("Not a valid number");
             }
         } while (userNumber < 1 || userNumber > 100);
+//        scan.close();
         return userNumber;
     }
 
-
-
-
-    public static void main(String[] args) {
+    public static void playGame() {
         int randomNumber = random1To100();
         System.out.println(randomNumber + " random number main- before do while");
         int validation;
@@ -48,6 +46,13 @@ public class HighLow {
             }
         } while(validation != randomNumber && counter < 5);
         System.out.println(randomNumber + " random number main- after do while");
+
+    }
+
+
+
+    public static void main(String[] args) {
+        playGame();
 
     }
 }
