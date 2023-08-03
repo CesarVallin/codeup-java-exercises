@@ -8,15 +8,6 @@ public class HighLow {
         int randomNumber = (int) randomNumberStart;
         return randomNumber;
     }
-    public static void highLow(int guessedNumber, int randomNumber) {
-          if (guessedNumber < randomNumber) {
-              System.out.println("HIGHER");
-          } else if (guessedNumber > randomNumber) {
-              System.out.println("LOWER");
-          } else if (guessedNumber == randomNumber) {
-              System.out.println("GOOD GUESS!");
-          }
-    }
     public static int welcomeToGame() {
         Scanner scan = new Scanner(System.in);
         int userNumber;
@@ -30,6 +21,17 @@ public class HighLow {
 //        scan.close();
         return userNumber;
     }
+
+    public static void highLow(int guessedNumber, int randomNumber) {
+          if (guessedNumber < randomNumber) {
+              System.out.println("HIGHER");
+          } else if (guessedNumber > randomNumber) {
+              System.out.println("LOWER");
+          } else if (guessedNumber == randomNumber) {
+              System.out.println("GOOD GUESS!");
+          }
+    }
+
     public static void playGame() {
         int randomNumber = random1To100();
         System.out.println(randomNumber + " random number main- before do while");
@@ -47,7 +49,6 @@ public class HighLow {
         System.out.println(randomNumber + " random number main- after do while");
 
     }
-
 
 
     public static void main(String[] args) {
