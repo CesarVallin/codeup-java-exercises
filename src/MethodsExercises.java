@@ -69,8 +69,7 @@ public class MethodsExercises {
         double diceRollB = Math.floor(Math.random() * userDiceRoll) + 1;
         int output1 = (int) diceRollA;
         int output2 = (int) diceRollB;
-        String completeRoll = output1 + " " + output2;
-        System.out.println(completeRoll);
+        String completeRoll = output1 + " & " + output2;
         return completeRoll;
     }
     public static void askUserToRoll() {
@@ -81,9 +80,8 @@ public class MethodsExercises {
         do {
             System.out.println("Roll the dice? [y/N]");
             rollResonse = scan.next();
-            System.out.println(rollResonse);
             if (rollResonse.equalsIgnoreCase("y")) {
-                System.out.println(rollDice(userResponse));
+                System.out.println("You rolled:  " + rollDice(userResponse));
             } else {
                 break;
             }
@@ -105,7 +103,7 @@ public class MethodsExercises {
 //        System.out.println(subtract(4, 3));
 //        System.out.println(modulus(4, 2));
         // -------------------------------------------------------------------------------------------
-
+        // recursion factorial as bonus part of this section...
 //        long recursionFactorialVar = recursionFactorial(4);
 //        System.out.println(recursionFactorialVar);
         // 2 & 3
@@ -113,7 +111,7 @@ public class MethodsExercises {
 //        do {
 //            // 2. Method validates input
 //            int userInput = getInteger(1, 10);
-//            // -------------------------------------------------------------------------------------------
+//            // -----------------------------------------------
 //            // 3. Factorial
 //            long factorialVar = factorial(userInput);
 //            System.out.println(factorialVar);
@@ -121,15 +119,9 @@ public class MethodsExercises {
 //            System.out.println("Would you like another factorial? [y/N]");
 //            goAgain = scanner.nextLine();
 //        } while(goAgain.equalsIgnoreCase("y"));
-
-
-
+        // -------------------------------------------------------------------------------------------
+        // 4. Create an application that simulates dice rolling.
         askUserToRoll();
-
-
-
-
-
 
 
 
