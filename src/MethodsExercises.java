@@ -55,12 +55,30 @@ public class MethodsExercises {
         }
         return counter;
     }
+    // Bonus recursion factorial...
     public static long recursionFactorial(long numb) {
         System.out.println(numb);
         if (numb == 1) { // Called Base Case
             return numb;
         }
         return numb * recursionFactorial(numb - 1);
+    }
+    // -------------------------------------------------------------------------------------------
+    // 2 & 3 Combined... (2 Method validates input... 3 Factorial)
+    public static void factorialApp () {
+        Scanner scanner = new Scanner(System.in);
+        String goAgain;
+        do {
+            // 2. Method validates input
+            int userInput = getInteger(1, 10);
+            // -----------------------------------------------
+            // 3. Factorial
+            long factorialVar = factorial(userInput);
+            System.out.println(factorialVar);
+
+            System.out.println("Would you like another factorial? [y/N]");
+            goAgain = scanner.nextLine();
+        } while(goAgain.equalsIgnoreCase("y"));
     }
     // -------------------------------------------------------------------------------------------
     // 4. dice roll game
@@ -92,7 +110,6 @@ public class MethodsExercises {
 
 
     public static void main (String[] args) {
-        Scanner scanner = new Scanner(System.in);
         // -------------------------------------------------------------------------------------------
         // 1. Basic arithmetic
 //        System.out.println(multiply(3, 4));
@@ -106,22 +123,12 @@ public class MethodsExercises {
         // recursion factorial as bonus part of this section...
 //        long recursionFactorialVar = recursionFactorial(4);
 //        System.out.println(recursionFactorialVar);
-        // 2 & 3
-//        String goAgain;
-//        do {
-//            // 2. Method validates input
-//            int userInput = getInteger(1, 10);
-//            // -----------------------------------------------
-//            // 3. Factorial
-//            long factorialVar = factorial(userInput);
-//            System.out.println(factorialVar);
-//
-//            System.out.println("Would you like another factorial? [y/N]");
-//            goAgain = scanner.nextLine();
-//        } while(goAgain.equalsIgnoreCase("y"));
         // -------------------------------------------------------------------------------------------
+        // 2 & 3 combined... validate a number from 1-10, run factorial.
+        factorialApp();
+
         // 4. Create an application that simulates dice rolling.
-        askUserToRoll();
+//        askUserToRoll();
 
 
 
