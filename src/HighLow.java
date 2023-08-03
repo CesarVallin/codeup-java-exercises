@@ -11,21 +11,21 @@ public class HighLow {
     public static int welcomeToGame() {
         Scanner scan = new Scanner(System.in);
         int userNumber;
-//        do {
-//            System.out.println("Enter a number between 1 and 100");
-//            userNumber = scan.nextInt();
-//            if (userNumber < 1 || userNumber > 100) {
-//                System.out.println("Not a valid number");
-//            }
-//        } while (userNumber < 1 || userNumber > 100);
+        do {
+            System.out.println("Enter a number between 1 and 100");
+            userNumber = scan.nextInt();
+            if (userNumber < 1 || userNumber > 100) {
+                System.out.println("Not a valid number");
+            }
+        } while (userNumber < 1 || userNumber > 100);
 //        scan.close();
         // With recursion...
-        System.out.println("Enter a number between 1 and 100");
-        userNumber = scan.nextInt();
-        if (userNumber < 1 || userNumber > 100) {
-            System.out.println("Not a valid number");
-            return welcomeToGame();
-        }
+//        System.out.println("Enter a number between 1 and 100");
+//        userNumber = scan.nextInt();
+//        if (userNumber < 1 || userNumber > 100) {
+//            System.out.println("Not a valid number");
+//            return welcomeToGame();
+//        }
 
         return userNumber;
     }
