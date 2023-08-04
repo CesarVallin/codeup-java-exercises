@@ -16,6 +16,9 @@ public class Input {
     public String getString(){
         return this.scanner.nextLine();
     }
+    public String getString(String prompt){
+        return prompt + " " + this.scanner.nextLine();
+    }
     public boolean yesNo() {
         boolean yes = this.scanner.nextLine().toLowerCase().startsWith("y");
         return yes;
