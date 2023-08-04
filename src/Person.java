@@ -24,12 +24,20 @@ public class Person {
     // ---------------------------------------------------------------------------------------------------------
 
     public static void main(String[] args) {
-        Person person1 = new Person("Cesar");
-        System.out.println(person1.getName());
-        person1.sayHello();
-        person1.setName("Bob");
-        System.out.println(person1.getName());
-        person1.sayHello();
+        Person personA = new Person("Cesar");
+        System.out.println(personA.getName());
+        personA.sayHello();
+        personA.setName("Bob");
+        System.out.println(personA.getName());
+        personA.sayHello();
+
+        Person person1 = new Person("John");
+        Person person2 = new Person("John");
+        System.out.println(person1.getName().equals(person2.getName()));
+        System.out.println(person1 == person2);
+        // names are equal, not objects
+
+
 
 
 
