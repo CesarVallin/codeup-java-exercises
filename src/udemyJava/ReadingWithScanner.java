@@ -3,15 +3,20 @@ import java.util.Scanner;
 public class ReadingWithScanner {
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+//        Scanner sc = new Scanner(System.in);
+//
+//        int x, y;
+//        System.out.println("Enter two integers:  ");
+//        x = sc.nextInt();
+//        y = sc.nextInt();
+//        System.out.println(x + " " + y);
+//
+//        int z = x + y;
+//        System.out.println("Sum is : " + z);
 
-        int x, y;
-        System.out.println("Enter two integers:  ");
-        x = sc.nextInt();
-        y = sc.nextInt();
-        System.out.println(x + " " + y);
 
-        int z = x + y;
-        System.out.println("Sum is : " + z);
+//        int x = 5 * 4 % 3;
+//        System.out.println(x);
+
     }
 }
