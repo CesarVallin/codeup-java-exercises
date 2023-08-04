@@ -125,10 +125,10 @@ public class MethodsExercises {
 //        System.out.println(recursionFactorialVar);
         // -------------------------------------------------------------------------------------------
         // 2 & 3 combined... validate a number from 1-10, run factorial.
-        factorialApp();
+//        factorialApp();
 
         // 4. Create an application that simulates dice rolling.
-//        askUserToRoll();
+        askUserToRoll();
 
 
 
