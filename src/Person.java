@@ -1,7 +1,7 @@
 public class Person {
 
     // ---------------------------------------------------------------------------------------------------------
-    // Instance property...
+    // Instance property... (fields)
     private String name;
     // ---------------------------------------------------------------------------------------------------------
     // Constructors...
@@ -24,12 +24,15 @@ public class Person {
     // ---------------------------------------------------------------------------------------------------------
 
     public static void main(String[] args) {
+        // `personA` is an instance of the Person Class
         Person personA = new Person("Cesar");
         System.out.println(personA.getName());
         personA.sayHello();
         personA.setName("Bob");
         System.out.println(personA.getName());
         personA.sayHello();
+
+        // Object (instances of the Person Class) are stored somewhere in memory, the variable names only point to that specific spot in memory.
 
 //        Person person1 = new Person("John");
 //        Person person2 = new Person("John");
