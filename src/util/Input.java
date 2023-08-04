@@ -54,7 +54,6 @@ public class Input {
         return userResponse;
     }
     // -----------------------------------------
-
     public double getDouble() {
         return this.scanner.nextDouble();
     }
@@ -62,7 +61,6 @@ public class Input {
         System.out.println(prompt);
         return getDouble();
     }
-
     public double getDouble(double min, double max) {
         double userResponse;
         do {
@@ -71,7 +69,6 @@ public class Input {
         } while(userResponse < min || userResponse > max);
         return userResponse;
     }
-
     public double getDouble (String prompt, double min, double max) {
         double userResponse;
         do {
