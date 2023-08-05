@@ -10,6 +10,8 @@ public class Circle {
     // ---------------------------------------------------------------------------------------------------------
     // Instance properties (fields)...
     private double radius;
+    // Static properties...
+    protected static int circlesCreated = 0;
     // ---------------------------------------------------------------------------------------------------------
     // Constructors...
     // non-arg constructor
@@ -19,6 +21,7 @@ public class Circle {
     // arg constructor
     public Circle(double newRadius) {
         this.radius = newRadius;
+        circlesCreated++;
     }
     // ---------------------------------------------------------------------------------------------------------
     // Getters & Setters
