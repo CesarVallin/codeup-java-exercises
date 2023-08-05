@@ -1,9 +1,10 @@
 package shapes;
 
 import util.Input;
+
 public class Circle {
 
-    // In contrast to instance fields are static fields, those that belong to a class as a whole. Static fields are accessible through the class itself. In other words, they are accessible without creating an instance of the class.
+    // In contrast to `instance fields` are `static fields`, those that belong to a class as a whole. Static fields are accessible through the class itself. In other words, they are accessible without creating an instance of the class.
     final public static double PI = Math.PI;
 
     // ---------------------------------------------------------------------------------------------------------
@@ -13,7 +14,7 @@ public class Circle {
     // Constructors...
     // non-arg constructor
     public Circle() {
-        this.radius = 1;
+        radius = 1;
     }
     // arg constructor
     public Circle(double newRadius) {
@@ -27,4 +28,11 @@ public class Circle {
     public double getCircumference() {
         return 2 * PI * this.radius;
     }
+    public double getRadius(){
+        return this.radius;
+    }
+    // ---------------------------------------------------------------------------------------------------------
+
+
+
 }
