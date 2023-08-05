@@ -3,7 +3,7 @@ package pearsonCircles;
 /**
  * Define the circle class with two constructors.. *****************************
  */
-public class Circle {
+public class CircleP {
     // -----------------------------------------------------------------------------------------------
      /** class Circle data field */
      /*
@@ -19,13 +19,13 @@ public class Circle {
     // --------------------------------------------
     /** Construct a circle with radius 1 */
     /** non-arg constructor ***************************** ******************************/
-    public Circle() {
+    public CircleP() {
         radius = 1;
     }
 
     /** Constructor a circle with a specified radius */
     /** Second constructor ***************************** ******************************/
-    public Circle(double newRadius) {
+    public CircleP(double newRadius) {
         this.radius = newRadius;
         // The `this` keyword basically refers to the particular object that we're operating on now.
     }
