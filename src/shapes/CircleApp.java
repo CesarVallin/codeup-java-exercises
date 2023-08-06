@@ -1,17 +1,16 @@
 package shapes;
 
-import com.sun.security.jgss.GSSUtil;
 import util.Input;
 
-import static shapes.Circle.getCirclesCreated;
-import static shapes.Circle.circleIdentifier;
+import static shapes.Circle.*;
+
 
 public class CircleApp {
     public static Input input = new Input();
 
     // ---------------------------------------------------------------------------------------------------------
     // Not in use right now...
-    public static String circleInstanceIdentifier = circleIdentifier();
+
     // ---------------------------------------------------------------------------------------------------------
 
     public static double askForRadius() {
