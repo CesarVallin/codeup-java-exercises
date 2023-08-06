@@ -45,6 +45,8 @@ public class CircleApp {
 
 
     /*
+    Could you create an anonymous object and assign a reference variable name later??
+
        Static fields & methods belong to the Class itself, shared only within that class.  To access these fields and methods on another Class, you will have to import them.
 
        Instance fields & methods are public, meaning they can be accessed from another Class within the same package.
