@@ -11,24 +11,24 @@ public class InputTest {
 
 //        // getString() method...
 //
-//        // Testing out getString() method...
-//        System.out.format("Enter something here:%n");
-//        String userResponse = input.getString();
-//        System.out.println(userResponse);
-//        // Optional getString() method with parameter prompt...
-//        String userResponsePromptIncluded = input.getString("Please enter something here...");
-//        System.out.println(userResponsePromptIncluded);
+        // Testing out getString() method...
+        System.out.format("Enter something here:%n");
+        String userResponse = input.getString();
+        System.out.println(userResponse);
+        // Optional getString() method with parameter prompt...
+        String userResponsePromptIncluded = input.getString("Please enter something here...");
+        System.out.println(userResponsePromptIncluded);
         // ---------------------------------------------------------------------------------------------------------
 
         // yesNo() method...
 
-        // Testing out yesNo() method...
-        System.out.format("Do you want to continue? [y/N]%n");
-        boolean continueResponse = input.yesNo();
-        System.out.println(continueResponse);
-        // Optional yesNo() method with parameter prompt...
-        boolean continuePromptIncluded = input.yesNo("Please answer, Do you want to continue? [y/N]");
-        System.out.println(continuePromptIncluded);
+//        // Testing out yesNo() method...
+//        System.out.format("Do you want to continue? [y/N]%n");
+//        boolean continueResponse = input.yesNo();
+//        System.out.println(continueResponse);
+//        // Optional yesNo() method with parameter prompt...
+//        boolean continuePromptIncluded = input.yesNo("Please answer, Do you want to continue? [y/N]");
+//        System.out.println(continuePromptIncluded);
         // ---------------------------------------------------------------------------------------------------------
 
 //        // getInt() method...

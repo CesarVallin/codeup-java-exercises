@@ -10,6 +10,13 @@ public class CircleApp {
 
     // ---------------------------------------------------------------------------------------------------------
     // Not in use right now...
+    // To ask for the specific name of a created Circle class object..
+//    public static String askForCircleId() {
+//        String circleId = input.getString("Enter the variable name for your circle: ");
+//        return circleId;
+//    }
+
+    // Or getCircleId(), getCircleName(), circleIdentifier() methods in Circle class, not in use as well.
 
     // ---------------------------------------------------------------------------------------------------------
 
@@ -27,6 +34,7 @@ public class CircleApp {
         System.out.println("The area of your circle is: " + area);
         System.out.println("The circumference of you circle is: " + circumference);
     }
+
     public static void createCircle() {
         do {
             Circle circle = new Circle(askForRadius());
