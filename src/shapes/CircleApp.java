@@ -1,10 +1,18 @@
 package shapes;
 
+import com.sun.security.jgss.GSSUtil;
 import util.Input;
+
 import static shapes.Circle.getCirclesCreated;
+import static shapes.Circle.circleIdentifier;
 
 public class CircleApp {
     public static Input input = new Input();
+
+    // ---------------------------------------------------------------------------------------------------------
+    // Not in use right now...
+    public static String circleInstanceIdentifier = circleIdentifier();
+    // ---------------------------------------------------------------------------------------------------------
 
     public static double askForRadius() {
         double doublePrompt = input.getDouble("\nPlease provide a radius to create a circle");
@@ -20,14 +28,12 @@ public class CircleApp {
         System.out.println("The area of your circle is: " + area);
         System.out.println("The circumference of you circle is: " + circumference);
     }
-
     public static void createCircle() {
-
         do {
             Circle circle = new Circle(askForRadius());
             infoPrompts(circle.getRadius(), circle.getArea(), circle.getCircumference());
         } while (keepMakingCircles());
-        System.out.println("\nCircles created: " + getCirclesCreated()); // Is it bc it is only a static reference?? meaning that we never create instances of `getCirclesCreated` ??
+        System.out.println("\nTotal Circles created: " + getCirclesCreated());
     }
 
 
