@@ -2,6 +2,8 @@ import java.util.Arrays;
 
 public class ArraysExercises {
 
+
+
     public static Person[] addPerson(Person[] people, Person nameToAdd) {
         Person[] newArray = Arrays.copyOf(people, people.length + 1);
         newArray[newArray.length -1 ] = nameToAdd;
@@ -9,7 +11,7 @@ public class ArraysExercises {
     }
 
     public static void main(String[] args) {
-
+        // What happens when you run the following code? why is Arrays.toString necessary
         int[] numbers = {1, 2, 3, 4, 5};
         System.out.println(Arrays.toString(numbers));
 
@@ -29,6 +31,9 @@ public class ArraysExercises {
 
         for (int i = 0; i < people.length; i++) {
             System.out.println(people[i].getName());
+        }
+        for (Person person: people) { // (data-type, what i am calling each element, the array)
+            System.out.println(person.getName());
         }
 
         Person newPerson = new Person("Cesar");
