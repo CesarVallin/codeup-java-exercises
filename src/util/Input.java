@@ -39,7 +39,13 @@ public class Input {
     }
     // -----------------------------------------
     public int getInt() {
-        return this.scanner.nextInt();
+        do {
+            try {
+                return this.scanner.nextInt();
+            } catch (Exception e) {
+                System.out.println("Wrong input, expected a number, try again");
+            }
+        } while(true);
     }
     public int getInt(String prompt) {
         System.out.println(prompt);
