@@ -3,6 +3,7 @@ package shapes;
 
 public class Circle {
 
+    // Static section...
     // In contrast to `instance fields` are `static fields`, those that belong to a class as a whole. Static fields are accessible through the class itself. In other words, they are accessible without creating an instance of the class.
     // ---------------------------------------------------------------------------------------------------------
     // Static properties...
@@ -31,6 +32,10 @@ public class Circle {
     public static String circleIdentifier(String circleName, int circleId) {
         return circleName + circleId;
     }
+
+
+
+    // Instance section...
     // ---------------------------------------------------------------------------------------------------------
     // Instance properties (fields)...
     private double radius;

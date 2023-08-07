@@ -37,19 +37,18 @@ public class CircleApp {
 
     public static void createCircle() {
         do {
-            Circle circle = new Circle(askForRadius());
-            infoPrompts(circle.getRadius(), circle.getArea(), circle.getCircumference());
+            Circle instanceCircle = new Circle(askForRadius());
+            infoPrompts(instanceCircle.getRadius(), instanceCircle.getArea(), instanceCircle.getCircumference());
         } while (keepMakingCircles());
-        System.out.println("\nTotal Circles created: " + getCirclesCreated());
+        System.out.println("\nTotal Circles created: " + Circle.getCirclesCreated()); // notice you are accessing a static method here, that method belongs to the Circle class, not an individual instanceCircle object !!! Because this is a static method, you use the Class name to access it.
     }
 
 
     /*
     Could you create an anonymous object and assign a reference variable name later??
 
-       Static fields & methods belong to the Class itself, shared only within that class.  To access these fields and methods on another Class, you will have to import them.
-
-       Instance fields & methods are public, meaning they can be accessed from another Class within the same package.
+        Because : getRadius( ) & getArea( ) & getCircumference( ) are instance methods, we have the instance variable name ( . ) dot, instance method.
+        Because: getCirclesCreated( ) is a static method, we have the class name Circle ( . ) dot, static method.  Remember, static variables and methods belong to the class.
 
      */
 }
