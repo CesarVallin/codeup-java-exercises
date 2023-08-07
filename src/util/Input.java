@@ -69,7 +69,13 @@ public class Input {
     }
     // -----------------------------------------
     public double getDouble() {
-        return this.scanner.nextDouble();
+        do {
+            try {
+                return this.scanner.nextDouble();
+            } catch (Exception e) {
+                System.out.println("Wrong input, expected a number, try again");
+            }
+        } while(true);
     }
     public double getDouble(String prompt) {
         System.out.println(prompt);
