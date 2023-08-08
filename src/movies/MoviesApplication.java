@@ -7,8 +7,7 @@ import java.util.Arrays;
 
 public class MoviesApplication {
 
-    public static void main(String[] args) {
-
+    public static void moviesApp() {
         Input input = new Input();
         do {
             System.out.println("What would you like to do?");
@@ -63,6 +62,12 @@ public class MoviesApplication {
                 }
             }
         } while(true);
+    }
+
+    public static void main(String[] args) {
+
+        moviesApp();
+
 
 
 
