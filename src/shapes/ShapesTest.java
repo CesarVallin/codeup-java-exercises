@@ -2,10 +2,15 @@ package shapes;
 
 public class ShapesTest {
     public static void main(String[] args) {
-        Rectangle box1 = new Rectangle(4, 5);
-        System.out.println("The perimeter of box1 is " + box1.getPerimeter() + " and area is " + box1.getArea());
+        /** Remember, the name of your class gives access to certain methods*/
+        Quadrilateral myShape;
 
-        Rectangle box2 = new Square(5);
-        System.out.println("The perimeter of box2 is " + box2.getPerimeter() + " and area is " + box2.getArea());
+        myShape = new Rectangle(3, 5);
+        System.out.println("The perimeter of myShape is: " + myShape.getPerimeter());
+        System.out.println("The area of myShape is: " + myShape.getArea());
+
+        /** On top, try declaring the variable Measurable instead of Quadrilateral, you should expect errors below */
+        double length = myShape.getLength();
+        System.out.println(length); //
     }
 }
