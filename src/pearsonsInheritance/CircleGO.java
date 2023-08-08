@@ -1,5 +1,6 @@
 package pearsonsInheritance;
 
+/** Keyword extends `extends` superclass data fields */
 public class CircleGO extends GeometricObject{
 
     private double radius;
