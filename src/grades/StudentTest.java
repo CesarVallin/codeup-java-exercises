@@ -19,19 +19,20 @@ public class StudentTest {
         cesar.addGrade(78);
         cesar.addGrade(93);
         messageFormat(cesar);
+
         Student luis = new Student("Luis");
         messageFormat(luis);
         luis.addGrade(93);
         luis.addGrade(94);
         luis.addGrade(77);
         messageFormat(luis);
+
         Student sam = new Student("Sam");
         messageFormat(sam);
         sam.addGrade(93);
         sam.addGrade(94);
         sam.addGrade(77);
         messageFormat(sam);
-
 
 
 

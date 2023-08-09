@@ -30,7 +30,7 @@ public class Input {
     }
     // -----------------------------------------
     public boolean yesNo() {
-        boolean yes = this.scanner.next().toLowerCase().startsWith("y");
+        boolean yes = this.scanner.nextLine().toLowerCase().startsWith("y");
         return yes;
     }
     public boolean yesNo(String prompt){
