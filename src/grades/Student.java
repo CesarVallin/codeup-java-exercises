@@ -5,6 +5,7 @@ import util.Input;
 
 
 public class Student {
+    /** Instance variables...*/
     private String name;
     private ArrayList<Integer> grades;
 
