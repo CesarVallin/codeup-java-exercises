@@ -4,28 +4,18 @@ public class ExceptionExercises {
     private static int divideNums(int a, int b) {
         if (b == 0){
             throw new IllegalArgumentException("Cannot divide by zero");
-        } else {
-            return  a/b;
         }
-    }
+        return (int) ((double) a / b);
 
-    private static int divideNums1(int a, int b) {
-        int result;
-        try {
-            result = a / b;
-        } catch (ArithmeticException e) {
-            throw new IllegalArgumentException("Cannot divide by zero");
-        }
-        return result;
     }
 
     public static void delayedHello(int param) {
         try {
             Thread.sleep(param);
-                System.out.println("Hello World");
         } catch (InterruptedException e) {
-                throw new RuntimeException("Took too long!!");
+                throw new RuntimeException(e);
         }
+        System.out.println("Hello World");
     }
     // Throws exception.  This is a checked exception...
 
