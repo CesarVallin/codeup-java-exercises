@@ -9,31 +9,34 @@ public class ExceptionExercises {
         }
     }
 
+    private static int divideNums1(int a, int b) {
+        int result;
+        try {
+            result = a / b;
+        } catch (ArithmeticException e) {
+            throw new IllegalArgumentException("Cannot divide by zero");
+        }
+        return result;
+    }
+
     public static void delayedHello(int param) {
         try {
             Thread.sleep(param);
-            if (param < 1001) {
                 System.out.println("Hello World");
-            }
         } catch (InterruptedException e) {
-            if (param >= 1001) {
                 throw new RuntimeException("Took too long!!");
-            }
         }
     }
+    // Throws exception.  This is a checked exception...
 
 
 
     public static void main(String[] args) {
 
-        System.out.println(divideNums(3, 1));
+//        System.out.println(divideNums(3, 0));
 
+            delayedHello(3000);
 
-        try{
-            delayedHello(1002);
-        } catch (RuntimeException e) {
-            System.out.println("Error: " + e.getMessage());
-        }
 
 
 
