@@ -12,7 +12,10 @@ public class Anagrams {
 
 //        System.out.println(isAnagram2("anagramm", "marganaa"));
 
-        System.out.println(isAnagram3("anagramm", "marganaa"));
+//        System.out.println(isAnagram3("anagramm", "marganaa"));
+
+//        System.out.println(isAnagram4("anagramm", "marganaa"));
+        System.out.println(isAnagram4("anagram", "margana"));
     }
 
 
@@ -75,5 +78,44 @@ public class Anagrams {
 
     }
 
+    static boolean isAnagram4(String a, String b) {
+        if (a.length() != b.length()) {
+            return false;
+        }
+        /** To be used as index values */
+        int lowSubStringA = 0;
+        int highSubstringA = 1;
+        int lowSubstringB = 0;
+        int highSubstringB = 1;
+        /** To be used for Anagram comparison*/
+        String stringA = "";
+        String stringB = "";
+        /** Looping and concat */
+        for(int i = 0; i < a.length(); i++) {
+//            if(stringA.contains(a.toLowerCase().substring(lowSubStringA, highSubstringA))) {
+//                continue;
+//            } else {
+                System.out.println("Substring: " + a.toLowerCase().substring(lowSubStringA, highSubstringA));
+                stringA += a.substring(lowSubStringA, highSubstringA);
+                System.out.println(stringA);
+//            }
+            lowSubStringA ++;
+            highSubstringA ++;
+        }
+
+//        for (int i = 0; i < b.length(); i++) {
+//            if(!stringB.contains(b.toLowerCase().substring(lowSubstringB, highSubstringB))) {
+//                stringB += b.substring(lowSubstringB, highSubstringB);
+//            }
+//        }
+//        System.out.println(stringA);
+//        System.out.println(stringB);
+//
+//        if (stringA.length() == stringB.length()) {
+//            return true;
+//        }
+
+        return false;
+    }
 
 }

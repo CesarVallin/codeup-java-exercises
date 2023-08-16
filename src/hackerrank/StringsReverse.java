@@ -2,6 +2,7 @@ package hackerrank;
 
 public class StringsReverse {
 
+    /** Palindrome, pg 190 */
     private static void solution(String word) {
         int low = 0;
         int high = word.length() - 1;
