@@ -38,6 +38,8 @@ public class DivisiblePairs {
 
     }
 
+    /** Code below comparing values without having to double compare...*/
+
     public static int divisibleSumPairs2(int n, int k, List<Integer> ar) {
         int counter = 0;
 
