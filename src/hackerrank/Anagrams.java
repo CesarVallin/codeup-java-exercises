@@ -16,6 +16,8 @@ public class Anagrams {
 
 //        System.out.println(isAnagram4("anagramm", "marganaa"));
         System.out.println(isAnagram4("anagram", "margana"));
+
+
     }
 
 
