@@ -25,7 +25,7 @@ public class DivisiblePairs {
         int index = 0;
 
         do {
-            for (int i = 0; i < ar.size(); i++) {
+            for (int i = 1; i < ar.size(); i++) {
                 System.out.println(ar.get(index) + " " + ar.get(i));
                 if (ar.get(index) < ar.get(i) && ( (ar.get(index) + ar.get(i) ) % k == 0)) {
                     counter++;
