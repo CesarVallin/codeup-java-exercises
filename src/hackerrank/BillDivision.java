@@ -16,7 +16,6 @@ public class BillDivision {
     private static List<Integer> bill = new ArrayList<>();
     public static void bonAppetit(List<Integer> bill, int k, int b) {
         // Write your code here
-
         // Anna declines to eat k
         // b is the amount of money that Anna contributed to the bill
 
