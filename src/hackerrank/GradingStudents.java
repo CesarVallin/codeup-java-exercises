@@ -37,6 +37,10 @@ public class GradingStudents {
         return roundedGrades;
     }
 
+    /**
+     * Check out ST_notes > JAVA > JAVA-continuED > round-up-to5
+     *
+     * */
     public static int roundUpYesNo(int grade) {
         int actualDifference = difference(grade);
         int roundUpGrade;
@@ -47,6 +51,13 @@ public class GradingStudents {
             return grade;
         }
     }
+
+    /**
+     * Pay attention to the way that your loop is set up.
+     * This one works, however you had to troubleshoot the previous set-up.
+     * In this correct set up, you are iterating every 5th index, and adding 5 to `gradeComparator`.
+     *
+     * */
 
     public static int difference(int grade) {
         int gradeComparator = 0;
