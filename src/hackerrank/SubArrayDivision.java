@@ -21,16 +21,15 @@ public class SubArrayDivision {
         // Write your code here
         int counter = 0;
         int comparison;
-            for (int i = 0; i < s.size() - m; i++) {
-                comparison = 0;
-                for (int j = i; j <= m; j++) { // takes care of iterating up to the last index... if m is less than your current loop index, loop never runs
-                    comparison += s.get(j);
-                }
-                if(comparison == d){
-                    counter ++;
-                }
+        for (int i = 0; i <= s.size() - m; i++) {
+            comparison = 0;
+            for(int j = i; j < i + m; j++) {
+                comparison += s.get(j);
             }
-
+            if (comparison == d) {
+                counter ++;
+            }
+        }
         return counter;
     }
 }
