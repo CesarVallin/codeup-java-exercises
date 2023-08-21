@@ -21,9 +21,9 @@ public class SubArrayDivision {
         // Write your code here
         int counter = 0;
         int comparison;
-        for (int i = 0; i <= s.size() - m; i++) {
+        for (int i = 0; i <= s.size() - m; i++) { // Needed this <=
             comparison = 0;
-            for(int j = i; j < i + m; j++) {
+            for(int j = i; j < i + m; j++) { // Having a <= here will make you go out of bounce.
                 comparison += s.get(j);
             }
             if (comparison == d) {
