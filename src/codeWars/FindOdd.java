@@ -3,6 +3,7 @@ package codeWars;
 public class FindOdd {
     public static void main(String[] args) {
         System.out.println(findIt(numbers));
+        // expected answer is 0;
         System.out.println(findIt(numbers1));
     }
 
@@ -12,7 +13,7 @@ public class FindOdd {
 
     public static int findIt(int[] a) {
 
-        int counter = 0;
+        int counter =0;
         int oddNum;
 
         for (int i = 0; i < a.length - 1; i++) {
@@ -22,7 +23,7 @@ public class FindOdd {
                     counter ++;
                 }
             }
-            if (counter % 2 != 0) {
+            if (counter % 2 == 0) {
                 oddNum = a[i];
                 return oddNum;
             }
