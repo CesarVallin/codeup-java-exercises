@@ -51,7 +51,7 @@ public class FindOdd {
         int counter = 0;
         int indexValue = 0;
         for (int i = 0; i < a.length; i++) {
-            for (int j = 0; j < a.length; j++) {
+            for (int j = 0; j < a.length; j++) { // Inner loop completes, then outer loop moves up an index
                 if (a[i] == a[j]) {
                     counter ++;
                 }
