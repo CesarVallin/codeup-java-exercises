@@ -14,7 +14,6 @@ public class FindOdd {
     private static int [] numbers2 = {1, 1, 2};
 
     public static int findIt(int[] a) {
-
         if (a.length == 1) {
             return a[0];
         }
