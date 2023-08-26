@@ -20,4 +20,10 @@ public class GetTheMiddleCharacter {
         }
         return word.substring(  (int)((Math.floor((float)word.length()) / 2)),  (int)(((Math.floor((float)word.length()) / 2) ) + 1) );
     }
+
+    /**
+     * Math.floor for odd numbers... to be able to catch the string split in half correctly
+     * This is for odd strings.length
+     *
+     * */
 }
