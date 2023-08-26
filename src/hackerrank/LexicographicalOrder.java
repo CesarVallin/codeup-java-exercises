@@ -3,7 +3,6 @@ package hackerrank;
 public class LexicographicalOrder {
     public static void main(String[] args) {
         testAscii(test1);
-
         System.out.println(getSmallestAndLargest(test1, 3));
 
     }

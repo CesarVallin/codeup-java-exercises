@@ -50,8 +50,8 @@ public class FindOdd {
         }
         int counter = 0;
         int indexValue = 0;
-        for (int i = 0; i < a.length; i++) {
-            for (int j = 0; j < a.length; j++) { // Inner loop completes, then outer loop moves up an index
+        for (int i = 0; i < a.length; i++) { // Loop starts at index 0, then inner loop executes.
+            for (int j = 0; j < a.length; j++) { // Inner loop completes, then outer loop moves up an index.  Inner loop begins again at index 0, unless indicated otherwise.
                 if (a[i] == a[j]) {
                     counter ++;
                 }
