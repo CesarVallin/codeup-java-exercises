@@ -31,6 +31,9 @@ public class PickingNumbers {
             int compareCount = 0;
 
             for (int j = 0; j < a.size(); j++) {
+                if (i == j) {
+                    continue;
+                }
                 if(Math.abs(a.get(i) - a.get(j)) == 0 || Math.abs(a.get(i) - a.get(j)) == 1) {
                     compareCount ++;
                 }
@@ -39,6 +42,6 @@ public class PickingNumbers {
                 counterChamp = compareCount;
             }
         }
-        return counterChamp - 1;
+        return counterChamp;
     }
 }
