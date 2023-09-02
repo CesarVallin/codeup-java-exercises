@@ -9,8 +9,11 @@ public class Test {
         /**
          * Here is my test on another Class.
          *
-         * It seems to me that I can access ``` A Class's methods, without ever instantiating an object from that class```` , regardless, I have no constructor for the DateAndTime Class.  Just a public static method.
+         * From St:
+         * You don't need to instantiate DateAndTime to access the findDay() method because you declared the findDay() method as static.
          *
-         * */
+         * From Bl:
+         * thats correct. because findDay() is static, it is not unique to an instance of DateAndTime. That means you can call it from anywhere using DateAndTime.findDay().
+         **/
     }
 }
