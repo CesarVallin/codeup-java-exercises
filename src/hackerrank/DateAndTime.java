@@ -14,4 +14,14 @@ public class DateAndTime {
         calendar.set(year, month - 1, day);
         return calendar.getDisplayName(Calendar.DAY_OF_WEEK, Calendar.LONG, new Locale("en", "US")).toUpperCase();
     }
+
+    /**
+     * Would I be able to access this anywhere within the same package file??
+     *
+     * If so, does it look like this:
+     *
+     *      DateAndTime.findDay();
+     *
+     *
+     * */
 }
