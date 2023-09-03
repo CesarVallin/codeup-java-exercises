@@ -3,6 +3,7 @@ package hackerrank;
 public class Test {
 
     public static void main(String[] args) {
+
         String dateTest = DateAndTime.findDay(8, 14, 2017);
         System.out.println(dateTest);
 
