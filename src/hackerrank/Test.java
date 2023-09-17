@@ -1,20 +1,24 @@
 package hackerrank;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public class Test {
 
     public static void main(String[] args) {
+        List<Integer> apples = new ArrayList<>();
+        Collections.addAll(apples, 2, 3, -4);
 
-        String dateTest = DateAndTime.findDay(8, 14, 2017);
-        System.out.println(dateTest);
+        List<Integer> oranges = new ArrayList<>();
+        Collections.addAll(oranges, 3, -2, -4);
 
-        /**
-         * Here is my test on another Class.
-         *
-         * From St:
-         * You don't need to instantiate DateAndTime to access the findDay() method because you declared the findDay() method as static.
-         *
-         * From Bl:
-         * thats correct. because findDay() is static, it is not unique to an instance of DateAndTime. That means you can call it from anywhere using DateAndTime.findDay().
-         **/
+        ApplesNOranges.countApplesAndOranges(7, 10, 4, 12, apples, oranges);
+
+
+
     }
+
+
+
 }
