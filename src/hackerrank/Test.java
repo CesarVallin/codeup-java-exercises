@@ -1,13 +1,12 @@
 package hackerrank;
 
-import codeWars.BreakCamelCase;
+import codeWars.CharProblem;
 
 public class Test {
 
     public static void main(String[] args) {
 
-        System.out.println(BreakCamelCase.camelCase("camelCasing"));
-        System.out.println("Expected output: camel Casing");
+        System.out.println(CharProblem.howOld("5 years old"));
 
     }
 
