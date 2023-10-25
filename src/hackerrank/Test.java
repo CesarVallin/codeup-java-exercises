@@ -1,14 +1,12 @@
 package hackerrank;
 
-import codeWars.SecureTester;
+import codeWars.Number;
 
 public class Test {
 
     public static void main(String[] args) {
 
-        System.out.println(SecureTester.alphanumeric("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"));
-        System.out.println(SecureTester.alphanumeric("with_underscore"));
-        System.out.println(SecureTester.alphanumeric("naïve"));
+        System.out.println(Number.isEven(0.5));
     }
 
 }
