@@ -27,6 +27,8 @@ public class SecureTester {
 
 }
 
+// Check out VowelRemover & Troll
+
 /**
  * the Character.isLetterOrDigit(c) method may not handle non-ASCII characters like "ï" as expected. To accurately handle these cases, you can use regular expressions with the matches method to ensure that the string only contains alphanumeric characters.
  *
