@@ -1,6 +1,7 @@
 package hackerrank;
 
 import codeWars.GrasshopperSummation;
+import codeWars.StringRepeat;
 
 public class Test {
 
@@ -9,6 +10,8 @@ public class Test {
 //        System.out.println(Number.isEven(0.5));
 
         System.out.println(GrasshopperSummation.summation(8));
+
+        System.out.println(StringRepeat.repeatStr(3, "hello"));
     }
 
 }
