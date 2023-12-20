@@ -24,5 +24,7 @@ public class VowelRemover {
     /**
      * Also check Troll class in codeWars package.  Similar scenario.
      * Check out SecureTester class for regex example
+     *
+     * Also check out FakeBinary
      * */
 }

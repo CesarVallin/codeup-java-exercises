@@ -20,3 +20,11 @@ public class FakeBinary {
         return result;
     }
 }
+
+
+/**
+ * Also check Troll class in codeWars package.
+ * Check out SecureTester class for regex example
+ *
+ * Also check out VowelRemover
+ * */
