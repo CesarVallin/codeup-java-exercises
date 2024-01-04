@@ -1,6 +1,7 @@
 package hackerrank;
 
 import codeWars.GrasshopperSummation;
+import codeWars.RoundToNextMultipleOfFive;
 import codeWars.StringRepeat;
 
 public class Test {
@@ -12,6 +13,8 @@ public class Test {
         System.out.println(GrasshopperSummation.summation(8));
 
         System.out.println(StringRepeat.repeatStr(3, "hello"));
+
+        System.out.println(RoundToNextMultipleOfFive.roundToNext5(12));
     }
 
 }
