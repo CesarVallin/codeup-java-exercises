@@ -4,6 +4,11 @@ public class Mumbling {
 
     public static String accum(String s) {
 
+        /**
+         * In Java, StringBuilder is a class that provides a flexible way to manipulate strings efficiently. Unlike the String class, which is immutable (meaning its value cannot be changed once it's created), StringBuilder allows you to modify the contents of a string without creating a new object each time.
+         *
+         * */
+
         StringBuilder result = new StringBuilder();
 
         for (int i = 0; i < s.length(); i++) {
