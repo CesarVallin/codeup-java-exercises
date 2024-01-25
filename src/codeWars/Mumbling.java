@@ -37,6 +37,13 @@ public class Mumbling {
             }
         }
 
+        /**
+         * Notice that the append method is utilized, it is used to concatenate (append) various types of data to the existing StringBuilder.
+         *
+         * Characters and stringes were appended.
+         *
+         * The return below utilized the toString() method to convert the `StringBuilder` object to a regular `String`.
+         * */
         return result.toString();
     }
 
