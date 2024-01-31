@@ -1,12 +1,12 @@
 package hackerrank;
 
-import codeWars.TwoSum;
-
-import java.util.Arrays;
+import codeWars.GreedIsGood;
 
 public class Test {
 
     private static int[] numbers = new int[]{1, 2, 3};
+
+    private static int[] dice = new int[]{5, 1, 3, 4, 1};
 
     public static void main(String[] args) {
 
@@ -20,7 +20,9 @@ public class Test {
 
 //        System.out.println(Mumbling.accum("abcd"));
 
-        System.out.println(Arrays.toString(TwoSum.twoSum(numbers, 4)));
+//        System.out.println(Arrays.toString(TwoSum.twoSum(numbers, 4)));
+
+        System.out.println(GreedIsGood.greedy(dice));
     }
 
 }
