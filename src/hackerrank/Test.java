@@ -1,6 +1,6 @@
 package hackerrank;
 
-import codeWars.GreedIsGood;
+import codeWars.FirstNonRepeatingCharacter;
 
 public class Test {
 
@@ -22,7 +22,11 @@ public class Test {
 
 //        System.out.println(Arrays.toString(TwoSum.twoSum(numbers, 4)));
 
-        System.out.println(GreedIsGood.greedy(dice));
+//        System.out.println(GreedIsGood.greedy(dice));
+
+        System.out.println(FirstNonRepeatingCharacter.firstNonRepeatingLetter("moon-men"));
+        System.out.println(FirstNonRepeatingCharacter.firstNonRepeatingLetter("sTreSS"));
+
     }
 
 }
