@@ -26,6 +26,9 @@ public class Test {
 
         System.out.println(FirstNonRepeatingCharacter.firstNonRepeatingLetter("moon-men"));
         System.out.println(FirstNonRepeatingCharacter.firstNonRepeatingLetter("sTreSS"));
+        System.out.println(FirstNonRepeatingCharacter.firstNonRepeatingLetter("aAbcC"));
+
+
 
     }
 
