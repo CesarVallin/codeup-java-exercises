@@ -15,7 +15,8 @@ public class FirstNonRepeatingCharacter {
             Map<Character, Integer> charCount = new HashMap<>();
 
             // Count occurrences of each character
-            // Converting String `s` into an array of characters.
+            // Converting String `s` into an array of characters.  .toCharArray() is a method that belongs to the String class
+            // You could have also created the array first then iterate over it.
             for (char ch : s.toCharArray()) {
                 // Check if the character exists in the map
                 if (charCount.containsKey(ch)) {
@@ -39,6 +40,18 @@ public class FirstNonRepeatingCharacter {
 
         /**
          * *******************************************************
+         * */
+
+        /**
+         * Example:
+         *
+         * String s = "Hello";
+         * char[] charArray = s.toCharArray();
+         *
+         * // Iterating through the character array
+         * for (char ch : charArray) {
+         *     System.out.println(ch);
+         * }
          * */
 
     }
